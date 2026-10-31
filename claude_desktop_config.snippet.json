@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sns-portugal": {
+      "command": "python",
+      "args": ["-m", "sns_portugal_mcp.server"]
+    }
+  }
+}
