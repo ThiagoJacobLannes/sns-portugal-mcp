@@ -1,5 +1,7 @@
 # sns-portugal-mcp
 
+<!-- mcp-name: io.github.ThiagoJacobLannes/sns-portugal-mcp -->
+
 MCP server for **official open-data statistics about Portugal's national health service (SNS)**, so Claude (or any MCP client) can answer "how busy is the emergency department at Santa Maria?", "how many people are waiting for surgery in the Norte region?" or "which SNS hospitals are near me?".
 
 **Read-only, no key, no account.** It uses only public open data. Not affiliated with the SNS, SPMS or the Portuguese Ministry of Health.
@@ -42,6 +44,16 @@ Runs an ODSQL query (`where`, `select`, `group_by`, `order_by`, `limit`, `offset
 Most hospital-activity datasets publish **year-to-date cumulative** values, so the December figure is the annual total. The curated tools return both the year-to-date value and a derived `in_month` value (this month minus the previous one). If you use `query_dataset` directly, do that subtraction yourself.
 
 ## Install
+
+**Quickest** (needs [uv](https://docs.astral.sh/uv/)): no clone needed, it runs straight from PyPI.
+
+```bash
+claude mcp add sns-portugal -- uvx sns-portugal-mcp
+```
+
+For Claude Desktop, use `"command": "uvx", "args": ["sns-portugal-mcp"]`.
+
+**From source:**
 
 Requires Python 3.10+.
 

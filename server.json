@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ThiagoJacobLannes/sns-portugal-mcp",
+  "title": "SNS Portugal",
+  "description": "Portugal's national health service open data: hospitals, emergency and waiting times.",
+  "repository": {
+    "url": "https://github.com/ThiagoJacobLannes/sns-portugal-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://thiagolannes.com",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "sns-portugal-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

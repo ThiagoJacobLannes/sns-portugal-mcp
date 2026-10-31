@@ -8,11 +8,14 @@ version = "0.1.0"
 description = "MCP server for official open-data statistics about Portugal's national health service (SNS): hospitals, emergency visits, surgery and consultation access."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 dependencies = [
     "mcp>=1.2,<2",
     "httpx>=0.27.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/ThiagoJacobLannes/sns-portugal-mcp"
 
 [project.scripts]
 sns-portugal-mcp = "sns_portugal_mcp.server:main"
