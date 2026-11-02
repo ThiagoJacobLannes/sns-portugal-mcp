@@ -60,3 +60,7 @@ jobs:
           # PyPI can take a minute to show a new release; the registry checks it exists.
           for i in 1 2 3 4 5 6; do ./mcp-publisher publish && exit 0; sleep 30; done
           exit 1
+
+      - name: Mark every version as deprecated in the MCP Registry
+        run: |
+          ./mcp-publisher status --status deprecated --all-versions --yes             --message "Deprecated: now part of portugal-mcp (io.github.ThiagoJacobLannes/portugal-mcp)."             io.github.ThiagoJacobLannes/sns-portugal-mcp

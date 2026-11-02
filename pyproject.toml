@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sns-portugal-mcp"
-version = "0.1.0"
-description = "MCP server for official open-data statistics about Portugal's national health service (SNS): hospitals, emergency visits, surgery and consultation access."
+version = "0.1.1"
+description = "DEPRECATED: now part of portugal-mcp. MCP server for official open-data statistics about Portugal's national health service (SNS): hospitals, emergency visits, surgery and consultation access."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

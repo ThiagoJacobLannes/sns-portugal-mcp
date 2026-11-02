@@ -643,6 +643,7 @@ def query_dataset(
 
 
 def main() -> None:
+    log.warning("sns-portugal-mcp is deprecated and gets no more updates: use portugal-mcp instead (uvx portugal-mcp; PORTUGAL_MCP_FEATURES=saude loads only this part).")
     mcp.run()
 
 
