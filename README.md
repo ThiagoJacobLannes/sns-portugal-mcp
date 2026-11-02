@@ -2,6 +2,10 @@
 
 <!-- mcp-name: io.github.ThiagoJacobLannes/sns-portugal-mcp -->
 
+> [!WARNING]
+> **Deprecated — use [portugal-mcp](https://github.com/ThiagoJacobLannes/portugal-mcp) instead.** This server now lives on as the `saude` feature of portugal-mcp, together with IPMA weather, INE, Banco de Portugal, Parliament, public contracts and more. Install with `uvx portugal-mcp` (add `PORTUGAL_MCP_FEATURES=saude` to load only this part). Tool names: `find_institutions` → `sns_find_institutions`, `emergency_stats` → `sns_emergency_stats`, `surgery_wait_stats` → `sns_surgery_wait_stats`, `consultation_wait_stats` → `sns_consultation_wait_stats`, `search_datasets` → `sns_search_datasets`, `query_dataset` → `sns_query_dataset`. This repository gets no further updates.
+
+
 MCP server for **official open-data statistics about Portugal's national health service (SNS)**, so Claude (or any MCP client) can answer "how busy is the emergency department at Santa Maria?", "how many people are waiting for surgery in the Norte region?" or "which SNS hospitals are near me?".
 
 **Read-only, no key, no account.** It uses only public open data. Not affiliated with the SNS, SPMS or the Portuguese Ministry of Health.
